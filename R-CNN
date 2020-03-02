@@ -6,4 +6,9 @@ Rich Feature Hierarchies For Accurate Object Detection And Semantic Segmentation
   1.使用高容量的卷积神经网络对Region Propsals进行传播，用来定位和分割目标。
   2.利用迁移学习的思想，小型数据集上的任务，可以对预先训练好的特征提取网络进行微调Fine-Tuning
   
- 
+R-CNN进行目标检测的步骤:
+
+  Input Image -> Extract Region Propsals -> Compute CNN Features -> Classify Regions
+  
+候选区域的选取:
+  R-CNN采用的方法:选择性搜索Selective Search
